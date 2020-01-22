@@ -1,0 +1,295 @@
+body { 
+overflow-x: hidden;  
+font-family: 'Muli', sans-serif;
+font-size: 18px;
+font-weight: 400;
+}
+
+.container-fluid {
+    padding-right:0;
+    padding-left:0;
+    margin-right:auto;
+    margin-left:auto
+ }
+
+.anchor {
+    display:block;
+    padding-top:120px;
+    margin-top:-100px;
+ }
+
+h1 {
+  font-family: 'Muli', sans-serif;
+  font-weight: 900;
+}
+
+.semi {
+  font-family: 'Muli', sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  color: rgb(56, 79, 35);
+}
+
+/*NAVBAR CUSTOMIZATION*/
+
+.logo {
+  max-width: 130px;
+}
+
+@media(min-width: 992px) {
+  .language-switch {
+    order: 1;
+  }
+}
+
+.navbar{
+  font-family: 'Muli', sans-serif; 
+  font-weight: 900;
+  box-shadow: 0px 1px 10px #999;
+}
+
+.nav-link {
+  color: black;
+  margin-right: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.nav-link:hover{
+  color: black;
+  border-bottom: 3px solid red;
+}
+
+
+/*LANG SWITCH*/
+.langswitcheng, .langswitchesp{
+  height: 50px;
+  width: 80px;
+  background: rgb(142, 63, 41);
+  color: rgb(202, 171, 159);
+  border-radius: 20px;
+  font-family: 'Muli', sans-serif;
+  font-weight: 900;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.langswitchselected {
+  background: rgb(166, 73, 47);
+  color: white;
+}
+
+/* Navbar animation tutorial by Kyle Goslan */
+.icon-bar {
+	width: 30px; 
+	height: 5px;
+	background-color: rgb(61, 78, 40);
+	display: block;
+	transition: all 0.2s;
+	margin-top: 4px
+}
+ 
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+}
+
+.navbar-toggler[aria-expanded="true"] .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggler[aria-expanded="true"] .middle-bar {
+  opacity: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 0% 50%;
+}
+
+.navbar-toggler[aria-expanded="false"] .top-bar {
+  transform: rotate(0);
+}
+
+.navbar-toggler[aria-expanded="false"] .middle-bar {
+  opacity: 1;
+}
+
+.navbar-toggler[aria-expanded="false"] .bottom-bar {
+  transform: rotate(0);
+}
+
+
+/*FOOTER*/
+#footer {
+  text-align: center;
+  color: white;
+  background: rgb(56, 79, 35);
+  height: 150px;
+}
+
+.bottomlinks {
+  color: white;
+  font-weight: bold;
+}
+
+.bottomlinks:hover {
+  color: white; 
+}
+
+/*FAMILY CARDS*/
+
+.card {
+  color: white;
+  background: rgb(234, 104, 42);
+  
+}
+
+.card-title {
+  font-family: 'Muli:700', sans-serif;
+  font-weight: bold;
+}
+
+/* MAP */
+
+/* MAP COLORS*/
+      .cls-1 {
+        fill: #9ebe59;
+      }
+
+      .cls-1, .cls-3, .cls-4 {
+        stroke: #394f24;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #5b9fbc;
+        stroke: #3a4f24;
+      }
+
+      .cls-3 {
+        fill: #384f23;
+      }
+
+      .cls-4 {
+        fill: #3a4f24;
+      }
+
+
+/*MAP BUTTONS*/
+
+#ricebtn, #fruitbtn, #honeybtn, #vegbtn, #spicebtn, #coffeebtn {
+	width: 125px;
+	height: 110px;
+	background: rgb(91, 159, 188);
+	border-radius: 30px;
+	border: 2px solid rgb(75, 122, 148);
+}
+
+#ricebtn:hover, #fruitbtn:hover, #honeybtn:hover, #vegbtn:hover, #spicebtn:hover, #coffeebtn:hover {
+	background: rgb(75, 122, 148);
+	
+}
+
+#ricebtn:focus, #fruitbtn:focus, #honeybtn:focus, #vegbtn:focus, #spicebtn:focus, #coffeebtn:focus{
+	background: rgb(75, 122, 148);
+	border: 2px solid rgb(91, 159, 188);
+}
+
+.endcol {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.startco {
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media all and (max-width: 768px) {
+  
+  .endcol {
+  display: flex;
+  justify-content: center;  
+}
+
+.startcol {
+  display: flex;
+  justify-content: center;
+}
+  
+}
+
+/*MAP CATATGORIES STARTING STATES*/
+
+#rice {
+  display: none;
+}
+
+#veggies {
+  display: none;
+}
+
+#honey {
+  display: none;
+}
+
+#coffee {
+  display: none;
+}
+
+#fruit {
+  display: none;
+}
+
+#spices_legumes {
+  display: none;
+}
+
+#plain {
+  opacity: 1;
+}
+
+/* BARS */
+
+#riceBar {
+  display: none;
+}
+
+#vegBar {
+  display: none;
+}
+
+#honeyBar {
+  display: none;
+}
+
+#coffeeBar {
+  display: none;
+}
+
+#fruitBar {
+  display: none;
+}
+
+#spiceBar {
+  display: none;
+}
+
+
+/*EXTRAS*/
+
+hr {
+	width: 600px;
+}
+
+.gifmap{
+	height: 300px;
+}
+
+
+
