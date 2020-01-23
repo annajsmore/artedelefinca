@@ -1,5 +1,5 @@
-body { 
-overflow-x: hidden;  
+body {
+overflow-x: hidden;
 font-family: 'Muli', sans-serif;
 font-size: 18px;
 font-weight: 400;
@@ -9,7 +9,12 @@ font-weight: 400;
     padding-right:0;
     padding-left:0;
     margin-right:auto;
-    margin-left:auto
+    margin-left:auto;
+
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
  }
 
 .anchor {
@@ -43,7 +48,7 @@ h1 {
 }
 
 .navbar{
-  font-family: 'Muli', sans-serif; 
+  font-family: 'Muli', sans-serif;
   font-weight: 900;
   box-shadow: 0px 1px 10px #999;
 }
@@ -81,14 +86,14 @@ h1 {
 
 /* Navbar animation tutorial by Kyle Goslan */
 .icon-bar {
-	width: 30px; 
+	width: 30px;
 	height: 5px;
 	background-color: rgb(61, 78, 40);
 	display: block;
 	transition: all 0.2s;
 	margin-top: 4px
 }
- 
+
 .navbar-toggler {
   border: none;
   background: transparent !important;
@@ -135,7 +140,7 @@ h1 {
 }
 
 .bottomlinks:hover {
-  color: white; 
+  color: white;
 }
 
 /*FAMILY CARDS*/
@@ -143,7 +148,7 @@ h1 {
 .card {
   color: white;
   background: rgb(234, 104, 42);
-  
+
 }
 
 .card-title {
@@ -192,7 +197,7 @@ h1 {
 
 #ricebtn:hover, #fruitbtn:hover, #honeybtn:hover, #vegbtn:hover, #spicebtn:hover, #coffeebtn:hover {
 	background: rgb(75, 122, 148);
-	
+
 }
 
 #ricebtn:focus, #fruitbtn:focus, #honeybtn:focus, #vegbtn:focus, #spicebtn:focus, #coffeebtn:focus{
@@ -211,17 +216,17 @@ h1 {
 }
 
 @media all and (max-width: 768px) {
-  
+
   .endcol {
   display: flex;
-  justify-content: center;  
+  justify-content: center;
 }
 
 .startcol {
   display: flex;
   justify-content: center;
 }
-  
+
 }
 
 /*MAP CATATGORIES STARTING STATES*/
@@ -291,5 +296,68 @@ hr {
 	height: 300px;
 }
 
+/* PARALLAX (based on code from W3Schools) */
+.agricultureHeader{
+  background-image: url('pics/headerImages/emcelvaney_Agriculture_Header.png');
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-bottom: 15px;
+  min-height: 100px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
+}
 
+.artHeader{
+  background-image: url('pics/headerImages/Arte_de_la_Finca_Art_Header.png');
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-bottom: 15px;
+  min-height: 100px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.contactHeader{
+  background-image: url('pics/headerImages/contactHeader.png');
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-bottom: 15px;
+  min-height: 100px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.familyHeader{
+  background-image: url('pics/headerImages/familyHeader.png');
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-bottom: 15px;
+  min-height: 100px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.homeHeader{
+  background-image: url('pics/headerImages/homeHeroImage.png');
+  padding-bottom: 30px;
+  padding-top: 30px;
+  margin-bottom: 15px;
+  min-height: 100px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
